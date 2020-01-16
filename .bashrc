@@ -56,8 +56,13 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+# Shows you the current changes in the git repo
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUPSTREAM="verbose"
+GIT_PS1_SHOWUNTRACKEDFILES=true
+
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W$(__git_ps1 "\[\033[01;31m\] (%s)\[\033[01;34m\]")\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w$(__git_ps1 "\[\033[01;31m\] (%s)\[\033[01;34m\]")\[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
