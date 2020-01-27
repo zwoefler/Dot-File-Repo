@@ -15,7 +15,7 @@ cd "$(dirname "${BASH_SOURCE}")"
 for dir in */; do
     (cd "$dir"
     for sh in `find . -type f -name "*.sh"`; do
-        echo "$sh";
+        source "yes" | "$sh";
     done;)
 done
 
