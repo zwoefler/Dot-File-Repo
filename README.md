@@ -3,11 +3,9 @@ This repo saves my personal dot and configuration files for all kinds of service
 
 
 
-
-
-
-
 # Currently saved configurations
-- [X] .bashrc		~/.bashrc
-- [X] .vimrc		~/.vimrc
-
+- [X] Bash
+- [X] Vim
+- [X] VSCode
+- [ ] Git
+- [ ]
