@@ -12,14 +12,5 @@ function rsyncVimRC() {
 
 }
 
-if [ "$1" == "--force" -o "$1" == "-f" ]; then
-  rsyncVimRC
-else
-  read -p "Put .vimrc in place. Are you sure? [Y/n] " -n 1
-  echo ""
-  if [[ ! $REPLY =~ ^[Nn]$ ]]; then
-    rsyncVimRC
-  fi
-fi
-
+rsyncVimRC
 unset rsyncVimRC

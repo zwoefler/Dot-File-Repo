@@ -1,8 +1,8 @@
 #!/bin/bash
 
 <<COMMENT
-    Originally from @GrimLinks dotfile repo on GitHub: https://github.com/GrimLink/dotfiles/blob/master/vscode/config.sh
-    All credit belongs to GrimLink. GitHub: https://github.com/GrimLink
+    Inspired by @GrimLinks dotfile repo on GitHub: https://github.com/GrimLink/dotfiles/blob/master/vscode/config.sh
+    @GrimLinks GitHub: https://github.com/GrimLink
 COMMENT
 
 
@@ -16,14 +16,5 @@ function rsyncVSCodeConfig() {
 
 }
 
-if [ "$1" == "--force" -o "$1" == "-f" ]; then
-  rsyncVSCodeConfig
-else
-  read -p "Update VSCode config files. Are you sure? [Y/n] " -n 1
-  echo ""
-  if [[ ! $REPLY =~ ^[Nn]$ ]]; then
-    rsyncVSCodeConfig
-  fi
-fi
-
+rsyncVSCodeConfig
 unset rsyncVSCodeConfig
