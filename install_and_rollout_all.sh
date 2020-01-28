@@ -24,29 +24,3 @@ for dir in */; do
         source "$sh";
     done;)
 done
-
-
-
-# echo "${GREEN}Setting up shell${RESET}"
-# source shell/setup.sh
-# read -p "Use zsh as shell? [Y/n] " -n 1
-# echo ""
-# if [[ ! $REPLY =~ ^[Nn]$ ]]; then
-#   source zsh/setup.sh
-# else
-#   source bash/setup.sh
-# fi
-
-
-# echo "${GREEN}Setting up git & ssh${RESET}"
-# source git/setup.sh
-# source git/ssh.sh
-
-
-# echo "${GREEN}Installing apps${RESET}"
-# source vscode/extensions.sh
-# source vscode/config.sh
-
-
-
-
