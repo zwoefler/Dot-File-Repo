@@ -8,6 +8,12 @@ COMMENT
 function installExtensions(){
   VSCODE_EXTENSIONS=(
     ms-python.python
+    mauve.terraform
+    ms-azuretools.vscode-docker
+    octref.vetur
+    pflannery.vscode-versionlens
+    redhat.vscode-yaml
+    ritwickdey.LiveServer
   )
   for i in "${VSCODE_EXTENSIONS[@]}"; do
     code --install-extension "$i"
