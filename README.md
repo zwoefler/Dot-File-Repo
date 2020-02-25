@@ -8,4 +8,4 @@ This repo saves my personal dot and configuration files for all kinds of service
 - [X] Vim
 - [X] VSCode
 - [ ] Git
-- [ ]
+- [ ] ...

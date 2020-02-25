@@ -7,7 +7,7 @@ COMMENT
 
 function rsyncBashRC() {
   rsync -avh --no-perms \
-    "$(dirname "${BASH_SOURCE}")/.vimrc" \
+    "$(dirname "${BASH_SOURCE}")/.bashrc" \
     $HOME/
 }
 

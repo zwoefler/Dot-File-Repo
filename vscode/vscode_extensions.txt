@@ -1,0 +1,11 @@
+aaron-bond.better-comments
+bbenoist.vagrant
+DavidAnson.vscode-markdownlint
+James-Yu.latex-workshop
+mauve.terraform
+ms-azuretools.vscode-docker
+ms-python.python
+octref.vetur
+pflannery.vscode-versionlens
+redhat.vscode-yaml
+ritwickdey.LiveServer
