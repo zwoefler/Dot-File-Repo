@@ -7,5 +7,6 @@
     },
     "[vue]":{
         "editor.tabSize": 2
-    }
+    },
+    "explorer.confirmDragAndDrop": false
 }

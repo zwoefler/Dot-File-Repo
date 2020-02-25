@@ -12,6 +12,10 @@ esac
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
 
+
+# deactivate CTRL + S
+stty -ixon
+
 # append to the history file, don't overwrite it
 shopt -s histappend
 
@@ -77,13 +81,16 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    alias dir='dir --color=auto'
-    alias vdir='vdir --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
+
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
 alias ll='ls -alF'
@@ -114,3 +121,16 @@ if ! shopt -oq posix; then
   fi
 fi
 source <(kubectl completion bash)
+
+
+
+
+
+#===========
+#= ALIASES =
+#===========
+
+alias ssh_copy='cat ~/.ssh/id_rsa.pub | xclip -selection clipboard'
+
+
+
