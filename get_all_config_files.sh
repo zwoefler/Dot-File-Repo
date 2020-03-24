@@ -6,6 +6,7 @@ declare -A DOTFILES_LOCATION
 DOTFILES_LOCATION[vim]="${HOME}/.vimrc"
 DOTFILES_LOCATION[bash]="${HOME}/.bashrc"
 DOTFILES_LOCATION[vscode]="${HOME}/.config/Code/User/settings.json"
+DOTFILES_LOCATION[xfce4]="${HOME}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml"
 vs_code_extensions="code --list-extensions >> $(dirname "${BASH_SOURCE}")/vscode/vscode_extensions.txt"
 
 
