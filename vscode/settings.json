@@ -8,5 +8,13 @@
     "[vue]":{
         "editor.tabSize": 2
     },
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "vue-html": "html",
+        "razor": "html",
+        "plaintext": "pug"
+    },
+    "emmet.triggerExpansionOnTab": true
 }

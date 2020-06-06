@@ -1,30 +1,30 @@
-" Sample vimrc file
 " This is a comment
 
-filetype plugin indent on		" enable filetype plugins and indent
-syntax enable				" enable syntax highlighting
+filetype indent on
 
 " General
+syntax enable				" enable syntax highlighting
 set number				" Show line numbers
-set showmatch				" Highlight matching brace
-
+set ruler				" Show row and column ruler information
 
 set hlsearch				" Highlight all search results
 set smartcase				" Enable smart-case search
-set ignorecase				" Always case-inseneitive
 set incsearch				" Searches for strings incrementally
 
+" Finding Files:
+set path+=**
 
+" Display all matching files when we tab
+set wildmenu
 
 " Indentation
-set autoindent				" Autoindent new lines
-set shiftwidth=4			" Number of autoindent spaces
-set smartindent				" Enable smart-indent
-set smarttab				" Enable smart-tabs
-set softtabstop=4			" Number of spaces per Tab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
 
-
-
-"" Advanced
-set ruler				" Show row and column ruler information
+" 80 charactersborder line
+set colorcolumn=80
+highlight ColorColumn ctermbg=3
 
