@@ -24,7 +24,15 @@ set shiftwidth=4
 set expandtab
 set smartindent
 
-" 80 charactersborder line
+" Set Spellchecking
+" set spell
+" set spelllang=en_us,de_de
+
+
+" 80 character's border line
 set colorcolumn=80
 highlight ColorColumn ctermbg=3
 
+" Explorer Settings
+let g:netrw_banner=0
+let g:netrw_liststyle=3
