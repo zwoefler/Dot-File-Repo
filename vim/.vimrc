@@ -18,16 +18,12 @@ set path+=**
 set wildmenu
 
 " Indentation
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set expandtab
+set tabstop=4 " Tab to be 4 spaces
+set softtabstop=4 " Tab look like 4 spaces
+set shiftwidth=4 "Indentationlevel 4 spaces
+set expandtab    " Tab character expand to 4 spaces
+set autoindent
 set smartindent
-
-" Set Spellchecking
-" set spell
-" set spelllang=en_us,de_de
-
 
 " 80 character's border line
 set colorcolumn=80
@@ -36,3 +32,9 @@ highlight ColorColumn ctermbg=3
 " Explorer Settings
 let g:netrw_banner=0
 let g:netrw_liststyle=3
+
+" FileType Settings
+autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType html setlocal sw=2 ts=2
+autocmd FileType yaml setlocal sw=2 ts=2 sts=2 expandtab
+autocmd FileType javascript setlocal sw=2 ts=2 sts=2 noexpandtab
