@@ -8,6 +8,7 @@ set number				" Show line numbers
 set ruler				" Show row and column ruler information
 
 set hlsearch				" Highlight all search results
+set noswapfile              " Deacivate swap file
 set smartcase				" Enable smart-case search
 set incsearch				" Searches for strings incrementally
 
