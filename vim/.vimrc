@@ -38,5 +38,5 @@ let g:netrw_liststyle=3
 autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType html setlocal sw=2 ts=2
 autocmd FileType yaml setlocal sw=2 ts=2 sts=2 expandtab
-autocmd FileType javascript setlocal sw=2 ts=2 sts=2 noexpandtab
+autocmd FileType javascript setlocal sw=2 ts=2 sts=2 noexpandtab include=^\s*\import
 autocmd BufRead,BufNewFile *.tf setlocal sw=2 ts=2 sts=2 noexpandtab
