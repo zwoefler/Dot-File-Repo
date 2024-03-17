@@ -62,7 +62,7 @@ GIT_PS1_SHOWUPSTREAM="verbose"
 GIT_PS1_SHOWUNTRACKEDFILES=true
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w$(__git_ps1 "\[\033[01;31m\] (%s)\[\033[01;34m\]")\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w$(__git_ps1 "\[\033[01;31m\] (%s)\[\033[01;34m\]")\[\033[00m\]\n\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -121,8 +121,7 @@ if ! shopt -oq posix; then
   fi
 fi
 source <(kubectl completion bash)
-
-
+source <(vmchamp --completion bash)
 
 
 
@@ -134,3 +133,7 @@ alias ssh_copy='cat ~/.ssh/id_rsa.pub | xclip -selection clipboard'
 
 
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
